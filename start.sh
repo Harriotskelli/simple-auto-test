@@ -18,7 +18,6 @@ VBoxManage modifyvm $VM --memory 8192 --nic1 nat --natpf1 rule1,tcp,127.0.0.1,22
 
 VBoxManage unattended install $VM \
 --iso=./ubuntu-16.04.7-server-amd64.iso \
---user=admin --full-user-name=name --password=changeme \
---install-additions
+--user=admin --full-user-name=name --password=changeme
 
 VBoxManage startvm $VM --type headless
