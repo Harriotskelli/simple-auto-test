@@ -11,12 +11,13 @@ then display the MOTD including the text "Hello Assurity DevOps”.
 This was done in a simple bash script using virtualbox as it was the simplest to set up in a short time
 However it could easily be adapted to run in a playbook
 I will put in considerations I had into brackets for things I would have liked to add if I had more time and other details.
-(for example using a playbook for this whole exercise would have been optimal but I could not guarrentee tool dependancies and I don't currently have an Ansible implementation at home)
+(for example using a playbook for this whole exercise would have been optimal but I could not guarantee tool dependancies and I don't currently have an Ansible implementation at home)
 
 # assumptions
 
-You have virtualbox installed on an ubuntu server later than 19
-Your virtualbox installtion is not missing the unattendedtemplates folder from /usr/share/virtualbox like mine was
+You have virtualbox installed on an ubuntu server >19
+>1024MB of available memory
+>10GB of available space in /
 
 
 # usage
