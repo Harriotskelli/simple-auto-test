@@ -34,3 +34,7 @@ The script will download the ubuntu-16.04.7-server-amd64 iso into the current lo
 If you already have the iso simply put it in the same directory to avoid re-download 
 (Would have liked more controlled data entry like specifing iso and install location)
 
+While start.sh kicks off the virtualbox vm a bulk of the work is done in the ubuntu preseed.
+Default root password is set there but not used
+Had a few issues with the default preseed causing some Kernal Panics so had to get a fix (Thanks Rob Raymond of StackExchange)
+If i was using an anisble playbook for this I would have a lot of the variables I've set in there available to change especially the Kernal Version but also login username, root password, MOTD, ip addresses etc
