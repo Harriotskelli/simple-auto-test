@@ -5,7 +5,7 @@ if [ ! -f ./ubuntu-16.04.7-server-amd64.iso ]; then
     curl https://releases.ubuntu.com/16.04.7/ubuntu-16.04.7-server-amd64.iso -o ./ubuntu-16.04.7-server-amd64.iso
 fi
 
-VBoxManage createvm --name $VM --ostype "Linux_64" --register
+VBoxManage createvm --name $VM --ostype "Ubuntu_64" --register
 VBoxManage createhd --filename /VirtualBox/$VM/$VM.vdi --size 32768
 VBoxManage storagectl $VM --name "SATA Controller" --add sata --controller IntelAHCI
 VBoxManage storageattach $VM --storagectl "SATA Controller" --port 0 --device 0 \
