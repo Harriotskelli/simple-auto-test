@@ -1,8 +1,7 @@
 #!/bin/bash
 VM="ubuntu-16"
 
-FILE=./ubuntu-16.04.7-server-amd64.iso
-if test [! -f "$FILE"]; then
+if [ ! -f ./ubuntu-16.04.7-server-amd64.iso ]; then
     curl https://releases.ubuntu.com/16.04.7/ubuntu-16.04.7-server-amd64.iso -o ./ubuntu-16.04.7-server-amd64.iso
 fi
 
