@@ -17,8 +17,8 @@ I will put in considerations I had into brackets for things I would have liked t
 
 You have virtualbox 6.1.16 installed on an Ubuntu Server
 (tested working in Ubuntu Desktop 20.04 and Server 18.04)
->1024MB of available memory
->10GB of available space in /
+-1024MB of available memory
+-10GB of available space in /
 
 # usage
 
